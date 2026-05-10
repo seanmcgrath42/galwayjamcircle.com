@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galway Jam Circle &mdash; A Let's Jam Community</title>
     <meta name="description" content="An easy-going, mostly acoustic jam in Galway. Every Saturday 2pm–6pm at Áras na nGael, Dominic Street. A founding member of the Let's Jam family.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -41,6 +42,31 @@
             margin-right: 0.4rem;
         }
 
+        .social-bar {
+            background-color: #1a3a2a;
+            text-align: center;
+            padding: 0.75rem 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .social-bar a {
+            color: #f0e8d8;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.2s, transform 0.2s;
+            display: inline-block;
+        }
+
+        .social-bar a:hover {
+            transform: scale(1.2);
+        }
+
+        .social-bar a.fb:hover { color: #1877f2; }
+        .social-bar a.ig:hover { color: #e4405f; }
+        .social-bar a.yt:hover { color: #ff0000; }
+
         header {
             background: linear-gradient(rgba(26, 58, 42, 0.75), rgba(26, 58, 42, 0.8)),
                         url('assets/claddagh-galway-ireland.png') center/cover no-repeat;
@@ -66,7 +92,7 @@
         }
 
         .hero-photo {
-            max-width: 700px;
+            max-width: 450px;
             margin: 1.5rem auto 0;
             display: block;
         }
@@ -221,6 +247,13 @@
         </a>
     </div>
 
+    <div class="social-bar">
+        <a href="https://www.facebook.com/groups/galwayjamcircle" target="_blank" rel="noopener" class="fb" title="Facebook Group"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.facebook.com/GalwayJamCircle42" target="_blank" rel="noopener" class="fb" title="Facebook Page"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/galwayjamcircle42/" target="_blank" rel="noopener" class="ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@galwayjamcircle" target="_blank" rel="noopener" class="yt" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+
     <header>
         <h1>Galway Jam Circle</h1>
         <p>An easy-going, mostly acoustic jam, playing all sorts of songs from Folk to Rock to Blues to Americana and beyond.</p>
@@ -263,12 +296,6 @@
                 inclusive setting.
             </p>
             <p>
-                The circle flows clockwise &mdash; each person takes a turn to play a song,
-                pick the next player, or simply pass. Songs are kept accessible (four chords
-                max) so everyone can join in, and there's an &ldquo;anything goes&rdquo;
-                section at the end for more complex pieces.
-            </p>
-            <p>
                 <a href="https://letsjam.org/how-lets-jam-works/" target="_blank" rel="noopener">Read more about the Let's Jam Method &rarr;</a>
             </p>
         </section>
@@ -282,7 +309,7 @@
                 <p>
                     Galway Jam Circle is a founding member of
                     <a href="https://letsjam.org" target="_blank" rel="noopener">Let's Jam</a>,
-                    a community bringing music enthusiasts together to jam, make friends, and have fun.
+                    a not-for-profit organisation dedicated to fostering inclusive jam circles in communities in Ireland and beyond.
                 </p>
                 <div class="letsjam-links">
                     <a href="https://letsjam.org" target="_blank" rel="noopener">letsjam.org</a>
@@ -306,7 +333,7 @@
             <img src="https://letsjam.org/assets/images/lets_jam_logo_159x135.png" alt="Let's Jam">
         </a>
         <br>
-        &copy; 2025 Galway Jam Circle &mdash; A founding member of
+        2026 Galway Jam Circle &mdash; A founding member of
         <a href="https://letsjam.org" target="_blank" rel="noopener">Let's Jam</a>
     </footer>
 </body>
