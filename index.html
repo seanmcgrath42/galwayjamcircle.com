@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galway Jam Circle</title>
-    <meta name="description" content="An easy-going, mostly acoustic jam in Galway. Every Saturday 2pm–6pm at Áras na nGael, Dominic Street.">
+    <title>Galway Jam Circle &mdash; A Let's Jam Community</title>
+    <meta name="description" content="An easy-going, mostly acoustic jam in Galway. Every Saturday 2pm–6pm at Áras na nGael, Dominic Street. A founding member of the Let's Jam family.">
     <style>
         * {
             margin: 0;
@@ -19,17 +19,41 @@
             line-height: 1.7;
         }
 
+        .topbar {
+            background-color: #222;
+            text-align: center;
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+        }
+
+        .topbar a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .topbar a:hover {
+            color: #fff;
+        }
+
+        .topbar img {
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 0.4rem;
+        }
+
         header {
-            background-color: #1a3a2a;
+            background: linear-gradient(rgba(26, 58, 42, 0.75), rgba(26, 58, 42, 0.8)),
+                        url('assets/claddagh-galway-ireland.png') center/cover no-repeat;
             color: #f0e8d8;
             text-align: center;
-            padding: 3rem 1rem;
+            padding: 3rem 1rem 0;
         }
 
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
             letter-spacing: 0.02em;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         header p {
@@ -38,6 +62,20 @@
             max-width: 600px;
             margin: 0 auto;
             opacity: 0.9;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .hero-photo {
+            max-width: 700px;
+            margin: 1.5rem auto 0;
+            display: block;
+        }
+
+        .hero-photo img {
+            width: 100%;
+            display: block;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
         main {
@@ -88,12 +126,66 @@
             color: #1a3a2a;
         }
 
+        .letsjam-badge {
+            background-color: #f0ebe0;
+            border: 2px solid #d4c9a8;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .letsjam-badge img {
+            height: 60px;
+            margin-bottom: 0.75rem;
+        }
+
+        .letsjam-badge p {
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .letsjam-badge a {
+            font-weight: bold;
+        }
+
+        .letsjam-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+        }
+
+        .letsjam-links a {
+            text-decoration: none;
+            border-bottom: 1px solid #d4c9a8;
+            padding-bottom: 2px;
+        }
+
+        .letsjam-links a:hover {
+            border-bottom-color: #1a3a2a;
+        }
+
         footer {
             text-align: center;
             padding: 2rem 1rem;
             color: #888;
             font-size: 0.9rem;
             border-top: 1px solid #e0d8c8;
+        }
+
+        footer img {
+            height: 30px;
+            margin-bottom: 0.5rem;
+            opacity: 0.6;
+        }
+
+        footer a {
+            color: #888;
+        }
+
+        footer a:hover {
+            color: #1a3a2a;
         }
 
         @media (max-width: 480px) {
@@ -112,9 +204,19 @@
     </style>
 </head>
 <body>
+    <div class="topbar">
+        <a href="https://letsjam.org" target="_blank" rel="noopener">
+            <img src="https://letsjam.org/assets/images/lets_jam_logo_159x135.png" alt="Let's Jam logo">
+            Part of the Let's Jam family &mdash; Just turn up and play
+        </a>
+    </div>
+
     <header>
         <h1>Galway Jam Circle</h1>
         <p>An easy-going, mostly acoustic jam, playing all sorts of songs from Folk to Rock to Blues to Americana and beyond.</p>
+        <div class="hero-photo">
+            <img src="assets/gjc_1.jpg" alt="Galway Jam Circle musicians gathered together with guitars, ukuleles, and saxophone">
+        </div>
     </header>
 
     <main>
@@ -144,6 +246,25 @@
         </section>
 
         <section>
+            <h2>The Let's Jam Family</h2>
+            <div class="letsjam-badge">
+                <a href="https://letsjam.org" target="_blank" rel="noopener">
+                    <img src="https://letsjam.org/assets/images/lets_jam_logo_347x141.png" alt="Let's Jam">
+                </a>
+                <p>
+                    Galway Jam Circle is a founding member of
+                    <a href="https://letsjam.org" target="_blank" rel="noopener">Let's Jam</a>,
+                    a community bringing music enthusiasts together to jam, make friends, and have fun.
+                </p>
+                <div class="letsjam-links">
+                    <a href="https://letsjam.org" target="_blank" rel="noopener">letsjam.org</a>
+                    <a href="https://letsjam.org/jam-circle/galway/" target="_blank" rel="noopener">Our page on Let's Jam</a>
+                    <a href="https://letsjam.org/jam-circle/clare/" target="_blank" rel="noopener">Clare Jam Circle</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
             <h2>Get in Touch</h2>
             <p>
                 Want to know more? Drop us an email at
@@ -153,7 +274,12 @@
     </main>
 
     <footer>
-        &copy; 2025 Galway Jam Circle
+        <a href="https://letsjam.org" target="_blank" rel="noopener">
+            <img src="https://letsjam.org/assets/images/lets_jam_logo_159x135.png" alt="Let's Jam">
+        </a>
+        <br>
+        &copy; 2025 Galway Jam Circle &mdash; A founding member of
+        <a href="https://letsjam.org" target="_blank" rel="noopener">Let's Jam</a>
     </footer>
 </body>
 </html>
